@@ -75,6 +75,7 @@ a {
 	padding: 0 12px;
 }
 
+/* Menu */
 .site-menu {
 	height: 39px;
 }
@@ -203,6 +204,7 @@ a {
 	top: 100%;
 }
 
+/* Post Grid */
 .grid {
 	margin-top: 2rem;
 	display: grid;
