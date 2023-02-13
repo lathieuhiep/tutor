@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.warp {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    max-width: 400px;
+}
+
+.login__logo {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login__desc {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1c1e21;
+}
+
+.login__form {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0 ,0 ,0.01), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 40px 0 0;
+    padding: 20px 12px 28px
+}
+
+.login__form .control-box {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.login__form input {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 17px;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    border-radius: 6px;
+}
+
+.login__form input:focus {
+    border-color: #1b74e4;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1b74e4;
+}
+
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    background-color: #166fe5;
+}
+
+.login .action {
+    text-align: center;
+}
+
+.login .action .link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1877f2;
+    font-size: 14px;
+}
+
+.login__form .bottom {
+    text-align: center;
+}
+
+.login__form .bottom a {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: #42b72a;
+}
+
+.note {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.note a {
+    font-weight: 700;
+    color: #000;
+}
