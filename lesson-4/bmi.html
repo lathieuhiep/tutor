@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chỉ số BMI</title>
+</head>
+<body>
+
+<p>Click để hiển thị prompt kiểm tra BMI.</p>
+
+<button onclick="myFunction()">Click vào đây</button>
+
+<script>
+	function myFunction() {
+		const weight = parseInt( prompt('Nhập cân nặng (kg)') );
+		const height_cm = parseInt ( prompt('Nhập chiều cao (cm)') );
+
+		const height_m = height_cm / 100;
+		const BMI = weight / ( height_m * height_m );
+
+		console.log('Kết quả BMI: ' , BMI);
+
+		if ( BMI < 18.5 ) {
+			console.log('Thiếu cân');
+		} else if ( BMI >= 18.5 && BMI <= 24.99 ) {
+			console.log('Bình thường');
+		} else if ( BMI >= 25 && BMI <= 29.99 ) {
+			console.log('Thừa cân');
+		} else {
+			console.log('Béo phì');
+		}
+	}
+</script>
+</body>
+</html>
