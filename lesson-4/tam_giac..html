@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<p>Click để hiển thị prompt kiểm tra tam giác.</p>
+
+<button onclick="myFunction()">Click vào đây</button>
+
+<script>
+function myFunction() {
+  const a = parseInt ( prompt('Nhập cạnh a') );
+  const b = parseInt( prompt('Nhập cạnh b') );
+  const c = parseInt( prompt('Nhập cạnh c') );
+
+  if ( a + b > c && b + c > a && a + c > b ) {
+
+    if ( a*a === b*b + c*c || b*b === a*a+c*c || c*c === a*a + b*b ) {
+      console.log('Tam giác vuông')
+    } else if (a === b && b === c ) {
+      console.log('Tam giác cân')
+    } else if ( a === b ) {
+      console.log('Tam giác đều')
+    } else {
+      console.log('Tam giác thường')
+    }
+
+  } else {
+    console.log('Không phải là tam giác')
+  }
+}
+</script>
+</body>
+</html>
