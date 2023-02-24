@@ -12,11 +12,10 @@
 
 <script>
 	function myFunction() {
-		const weight = parseInt( prompt('Nhập cân nặng (kg)') );
-		const height_cm = parseInt ( prompt('Nhập chiều cao (cm)') );
+		const weight = parseFloat( prompt('Nhập cân nặng (kg)') );
+		const height = parseFloat( prompt('Nhập chiều cao (m)') );
 
-		const height_m = height_cm / 100;
-		const BMI = weight / ( height_m * height_m );
+		const BMI = weight / ( height * height );
 
 		console.log('Kết quả BMI: ' , BMI);
 
